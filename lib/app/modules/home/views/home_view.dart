@@ -45,6 +45,9 @@ class HomeView extends GetView<HomeController> {
                 ],
               ),
             ),
+            const SizedBox(
+              height: 50,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -62,7 +65,7 @@ class HomeView extends GetView<HomeController> {
                 )
               ],
             ),
-
+            const Spacer(),
             // Keyboard
             GridView.count(
               crossAxisCount: 7,
@@ -76,7 +79,6 @@ class HomeView extends GetView<HomeController> {
                         ? null
                         : () {
                             controller.charecterPress(charecter);
-                            // controller.gessWord.value += charecter;
                           },
                     child: Center(child: Text(charecter)),
                   ),

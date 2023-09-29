@@ -6,7 +6,7 @@ import 'package:hangman_game/app/routes/app_pages.dart';
 class HomeController extends GetxController {
   @override
   void onInit() {
-    imageAsstes.value = "images/6.png";
+    imageAsstes.value = "assets/images/6.png";
     super.onInit();
   }
 
@@ -30,7 +30,7 @@ class HomeController extends GetxController {
 
     if (!found && lives.value > 1) {
       lives.value--;
-      imageAsstes.value = "images/${lives.value}.png";
+      imageAsstes.value = "assets/images/${lives.value}.png";
       print(lives.value);
       print(imageAsstes.value);
     } else if (lives.value == 1) {
